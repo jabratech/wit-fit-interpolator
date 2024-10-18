@@ -1,7 +1,5 @@
 package jabratech:fit-interpolator;
 
-world fit-interpolator-handler {
-    
+world fit-interpolator{
     export fit-interpolator-handler;
-
 }
