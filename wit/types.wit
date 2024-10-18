@@ -1,7 +1,7 @@
 interface types {
-
+    use jabratech:common/types.{currency};
     record request{
-        currency: string,
+        currency: currency,
     }
 
     record fit{
