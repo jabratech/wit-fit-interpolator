@@ -1,0 +1,29 @@
+interface types {
+
+    record request{
+        currency: string,
+    }
+
+    record fit{
+        name: string,
+        value: f64,
+    }
+
+    record fit-response{
+        code: s16,
+        message: string,
+        data: list<fit>,
+    }
+
+    record fit-graph{
+        x: list<string>,
+        y: list<f64>,
+    }
+
+    record fit-graph-response{
+        code: s16,
+        message: string,
+        data: fit-graph,
+    }
+
+}
