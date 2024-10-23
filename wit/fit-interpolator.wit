@@ -1,9 +1,9 @@
-interface fit-interpolator-handler {
+interface handler {
     use jabratech:common/types.{response};
-      use types.{fit-response,fit-graph-response, request};
+      use types.{fit-response,fit-graph-response, request,fit-data-response};
     
       get-fit:  func(request: request) -> result<fit-response, response>;
-      get-fit-data:  func(request: request) -> result<fit-response, response>;
+      get-fit-data:  func(request: request) -> result<fit-data-response, response>;
       get-fit-graph-data: func(request: request) -> result<fit-graph-response, response>;
   
 }

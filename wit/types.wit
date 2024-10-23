@@ -2,6 +2,7 @@ interface types {
     use jabratech:common/types.{currency};
     record request{
         currency: currency,
+        date: option<string>,
     }
 
     record fit{
@@ -15,9 +16,24 @@ interface types {
         data: list<fit>,
     }
 
+    record fit-data{
+        maturity: string,
+        atm: f64,
+        weight: f64,
+        interpolator-vol: f64
+    }
+
+    record fit-data-response{
+        code: s16,
+        message: string,
+        data: list<fit-data>,
+    }
+
+
     record fit-graph{
         x: list<string>,
-        y: list<f64>,
+        y-interpolator-vol: list<f64>,
+        y-atm: list<f64>,
     }
 
     record fit-graph-response{
