@@ -20,7 +20,8 @@ interface types {
         maturity: string,
         atm: f64,
         weight: f64,
-        interpolator-vol: f64
+        interpolator-vol: f64,
+        fit-weight: f64,
     }
 
     record fit-data-response{
