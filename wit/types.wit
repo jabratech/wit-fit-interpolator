@@ -21,7 +21,7 @@ interface types {
         atm: f64,
         weight: f64,
         interpolator-vol: f64,
-        fit-weight: f64,
+        fit-weight: i32,
     }
 
     record fit-data-response{
